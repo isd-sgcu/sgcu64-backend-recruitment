@@ -91,10 +91,10 @@ HR
   - Method: POST
   - Headers: ไม่มีเพิ่มเติม
   - Request Body: JSON
-    ```json
+    ```js
     {
-      “name”: “Buy chicken”,
-      “deadline”: “21/07/2021”
+      "name": "Buy chicken",
+      "deadline": "21/07/2021"
     }
     ```
   - Request Params: ไม่มี
@@ -104,9 +104,9 @@ HR
       - Response Body: JSON
       ```json
       {
-        “id”: 1,
-        “name”: “Buy chicken”,
-        “deadline”: “21/07/2021”
+        "id": 1,
+        "name": "Buy chicken",
+        "deadline": "21/07/2021"
       }
       ```
       - Status Code: 200 OK
@@ -114,12 +114,19 @@ HR
       - Response Body: JSON
       ```json
       {
-        “message”: “name or deadline does not exist.”
+        "message": "name or deadline does not exist."
       }
       ```
       - Status Code: 400 Bad Request
 
-#### ทำแบบ Swagger
+#### ทำแบบ Swagger (Spec ที่แสดงอาจไม่ตรงกับ UI ยกมาเพื่อให้เห็นภาพเฉย ๆ)
+![image](https://user-images.githubusercontent.com/24814968/121923165-db069f00-cd64-11eb-9098-539c2e1734a9.png)  
+
+OpenAPI Spec
+
+![image](https://user-images.githubusercontent.com/24814968/121923206-e5289d80-cd64-11eb-950d-8391bcdc27e0.png)  
+
+Swagger UI
 
 # Applicant Section
 
