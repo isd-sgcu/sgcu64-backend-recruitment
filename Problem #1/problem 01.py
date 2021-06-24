@@ -26,30 +26,38 @@ def x3(n,c):
   elif(x=='3' or x=='5' or x=='9'):
     c=c+' __|'
   return c
-a=input('Input: ').split(':')
-b=['','','','','','']
-b[0]=a[0][0]
-b[1]=a[0][1]
-b[2]=a[1][0]
-b[3]=a[1][1]
-b[4]=a[2][0]
-b[5]=a[2][1]
-for i in range(3):
-  c=''
-  count=0
-  for x in b:
-    if(i==0):
-      c=x1(x,c)+' '
-      if(count==1 or count==3):
-        c=c+' '
-    elif(i==1):
-      c=x2(x,c)+' '
-      if(count==1 or count==3):
-        c=c+'.'
-    elif(i==2):
-      c=x3(x,c)+' '
-      if(count==1 or count==3):
-        c=c+'.'
-    count=count+1
-  print(c)
+def err():
+  print('''
 
+          ·           ·
+ __   __  ·  __   __  ·  __  __''')
+a=input('Input: ').split(':')
+if(int(a[1])>=60 or int(a[2])>=60):
+  err()
+else:  
+  b=['','','','','','']
+  b[0]=a[0][0]
+  b[1]=a[0][1]
+  b[2]=a[1][0]
+  b[3]=a[1][1]
+  b[4]=a[2][0]
+  b[5]=a[2][1]
+  print('')
+  for i in range(3):
+    c=''
+    count=0
+    for x in b:
+      if(i==0):
+        c=x1(x,c)+' '
+        if(count==1 or count==3):
+          c=c+' '
+      elif(i==1):
+        c=x2(x,c)+' '
+        if(count==1 or count==3):
+          c=c+'.'
+      elif(i==2):
+        c=x3(x,c)+' '
+        if(count==1 or count==3):
+          c=c+'.'
+      count=count+1
+    print(c)
