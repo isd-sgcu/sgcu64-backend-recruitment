@@ -34,4 +34,22 @@ b[2]=a[1][0]
 b[3]=a[1][1]
 b[4]=a[2][0]
 b[5]=a[2][1]
+for i in range(3):
+  c=''
+  count=0
+  for x in b:
+    if(i==0):
+      c=x1(x,c)+' '
+      if(count==1 or count==3):
+        c=c+' '
+    elif(i==1):
+      c=x2(x,c)+' '
+      if(count==1 or count==3):
+        c=c+'.'
+    elif(i==2):
+      c=x3(x,c)+' '
+      if(count==1 or count==3):
+        c=c+'.'
+    count=count+1
+  print(c)
 
