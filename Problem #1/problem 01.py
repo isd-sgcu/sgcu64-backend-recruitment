@@ -4,6 +4,18 @@ def x1(n,c):
   else:
     c=c+' __ '
   return c
+def x2(n,c):
+  if(x=='0'):
+    c=c+'|  |'
+  elif(x=='1' or x=='7'):
+    c=c+'   |'
+  elif(x=='2' or x=='3'):
+    c=c+' __|'
+  elif(x=='4' or x=='8' or x=='9'):
+    c=c+'|__|'
+  elif(x=='5' or x=='6'):
+    c=c+'|__ '
+  return c
 a=input('Input: ').split(':')
 b=['','','','','','']
 b[0]=a[0][0]
