@@ -16,6 +16,16 @@ def x2(n,c):
   elif(x=='5' or x=='6'):
     c=c+'|__ '
   return c
+def x3(n,c):
+  if(x=='0' or x=='6' or x=='8'):
+    c=c+'|__|'
+  elif(x=='1' or x=='4' or x=='7'):
+    c=c+'   |'
+  elif(x=='2'):
+    c=c+'|__ '
+  elif(x=='3' or x=='5' or x=='9'):
+    c=c+' __|'
+  return c
 a=input('Input: ').split(':')
 b=['','','','','','']
 b[0]=a[0][0]
